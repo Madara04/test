@@ -1,0 +1,719 @@
+body {
+    text-align: center;
+    margin: 0 auto;
+    width: 1200px;
+    letter-spacing: 2px;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+
+/* Первый блок (шапка) */
+.header {
+    background: url(../images/header.png);
+    width: 1200px;
+    height: 500px;
+    display: block;
+    position: relative;
+}
+
+.logo {
+    margin-left: 120px;
+    top: 20px;
+    position: absolute;
+    color: white;
+}
+
+.menu {
+    margin-left: 680px;
+    top: 10px;
+    position: relative;
+
+}
+
+/* Меню */
+.menu-main {
+    list-style: none;
+    margin: 0 0 5px;
+    padding: 30px 0 5px;
+    
+}
+.menu-main li {
+    display: inline-block;
+}
+.menu-main li:after {
+    content: " ";
+    color: #cf0f0f;
+    display: inline-block;
+    vertical-align:top;
+}
+
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  letter-spacing: 2px;
+  position: relative;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+
+.menu-main a, .menu-main a:visited {
+    color: white;
+}
+.menu-main a.current, .menu-main a:hover {
+    color: #9b59b6;
+}
+.menu-main a:before,
+.menu-main a:after {
+  content: " ";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #9b59b6;
+  transition: .8s;
+}
+
+.menu-main a:hover:before, .menu-main .current:before {
+    left: 0;
+}
+.menu-main a:hover:after, .menu-main .current:after {
+    right: 0;
+}   
+@media (max-width: 1200px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+  font-size: 30px;
+}
+}
+
+
+.info {
+    position: absolute;
+    left: 26%;
+    top: 30%;
+}
+
+h1 {
+    color: white;
+    font-size: 35px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.horizon {
+    width: 618px;
+    height: 1px;
+    background-color: white;
+}
+
+.info p {
+    color: white;
+    font-size: 20px;
+}
+
+/* Кнопка */
+
+/* Второй блок (информация) */
+.portfolio {
+    
+    height: 700px;
+    display: block;
+    position: relative;
+    text-align: center;
+    
+}
+
+.main {
+    width: 770px;
+    margin-top: 100px;
+    margin-left: 210px;
+    text-align: center;
+    
+    
+}
+h2 {
+    color: #9b59b6;
+    font-size: 25px;
+    
+}
+
+.main-block {
+    margin: 50px;
+    width: 1010px;
+    height: 410px;
+    margin-left: 110px;
+    display: flex;
+    
+}
+
+.main p {
+    color: #95a5a6;
+}
+
+.block-one {
+    width: 310px;
+    height: 390px; 
+    margin: 20px;
+    
+
+}
+.block-two {
+    width: 310px;
+    height: 390px; 
+    margin: 20px;
+
+}
+.block-three{
+    width: 310px;
+    height: 390px; 
+    margin: 20px;
+
+}
+
+.main-block p {
+    text-align: justify;
+    color: #95a5a6;
+}
+
+h3 {
+    color: #9b59b6;
+}
+
+
+/* Галлерея*/
+
+.gallery {
+    position: relative;
+    height: 900px;
+}
+
+.photo1 {
+    position: absolute;
+    top: 0px;
+    margin-left: 120px;
+
+}
+.photo2 {
+    position: absolute;
+    top: 0px;
+    margin-left: 680px;
+
+}
+.column {
+    
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+}
+
+
+.column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+
+.gallery:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.box {
+    transform: translateX(100px);
+    position: relative;
+    display: none;
+}
+
+
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+.window{
+    width: 400px;
+    height: 100px;
+    position:absolute;
+    left: 10px;
+    bottom:0;
+    right:0;
+    background: #9b59b6; 
+    display:none;
+}
+.column:hover .window{
+    display:block;
+   
+}
+.window h2 {
+    color: white;
+    margin: 0;
+}
+
+.window1{
+    width: 400px;
+    height: 100px;
+    position:absolute;
+    left: 10px;
+    bottom: 330px;
+    right:0;
+    background: #9b59b6;
+    
+    display:none;
+}
+.column:hover .window1{
+    display:block;
+}
+
+.window1 h2 {
+    color: white;
+    margin: 0;
+}
+
+/* Обратная свящь*/
+
+.feedback h1 {
+    color:  #9b59b6;
+}
+.feedback {
+    height: 700px;
+    position: relative;
+}
+
+.form {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    margin-left: 200px;
+
+}
+
+.form input {
+    width: 370px;
+    height: 40px;
+    font-size: 20px;
+    margin: 20px;
+    border: 5px solid #d1def0;
+    border-radius: 10px ;
+    background: #e4e8e8;
+
+}
+
+textarea {
+    font-size: 20px;
+    width: 770px;
+    height: 210px;
+    border: 5px solid #d1def0;
+    border-radius: 10px;
+    background: #e4e8e8;
+    position: absolute;
+    top: 200px;
+    left: 230px;
+    resize: none;
+}
+
+.send {
+    position: absolute;
+    top: 450px;
+    margin-left: 850px;
+    
+   
+}
+
+.send input {
+    font-size: 20px;
+    background-color: #d1def0;
+    border: 0;
+    border-radius: 10x;
+    color:  #9b59b6;
+    
+}
+
+.send input:hover {
+    box-shadow: 0 0 5px 0 #9b59b6 inset, 0 0 5px 2px  #9b59b6;
+    cursor: pointer;
+}
+
+.send input:active {
+    box-shadow: 0 0 10px 0  #5b1e74 inset, 0 0 10px 4px#5b1e74;
+}
+
+
+/*Подвал*/
+
+.footer {
+    height: 300px;
+    background-color: #9b59b6;
+    display: flex;
+    position: relative;
+}
+
+.footer p {
+    color: white;
+    font-size: 20px;
+    margin: 50px;
+}
+
+.twitter {
+    position: absolute;
+    top: -30px;
+    left: 200px;
+}
+
+.dribbble {
+    position: absolute;
+    top: -30px;
+    left: 550px;
+}
+
+.facebook {
+    position: absolute;
+    top: -30px;
+    left: 880px;
+}
+
+.copy {
+    position: absolute;
+    top: 140px;
+    left: 120px;
+    
+}
+
+.print {
+    position: absolute;
+    top: 140px;
+    right: 120px;
+    
+}
+
+@media (min-width: 375px), (max-width: 1200px) {
+   
+    .header {
+        background: url(../images/header.png);
+        
+        height: 500px;
+        display: block;
+        position: relative;
+    }
+    
+    .logo {
+        margin-left: 50px;
+        top: 20px;
+        position: absolute;
+        color: white;
+        font-size: 30px;
+    }
+    
+    .menu {
+        margin-left: 840px;
+        top: 10px;
+        position: relative;
+    
+    }
+    .info {
+        position: absolute;
+        left: 20%;
+        top: 20%;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    .info p {
+        font-size: 30px;
+    }
+    
+
+   /* Второй блок (информация) */
+    .portfolio {
+    
+        width: 700px;
+        display: block;
+        position: relative;
+        text-align: center;
+        
+    }
+    
+    .main {
+        width: 400px;
+        margin-top: 10px;
+        margin-left: 80px;
+        text-align: center;
+        
+        
+    }
+   
+    .main-block {
+        margin: 50px;
+        width: 400px;
+    
+    }
+    
+
+    .block-one {
+        width: 310px;
+        height: 390px; 
+        margin: 20px;
+        
+    
+    }
+    .block-two {
+        width: 310px;
+        height: 390px; 
+        margin: 20px;
+    
+    }
+    .block-three{
+        width: 310px;
+        height: 390px; 
+        margin: 20px;
+    
+    }
+    
+    /*Галлерея*/
+    .gallery {
+        position: relative;
+    
+    }
+    
+    .photo1 {
+        position: absolute;
+        top: -650px;
+        margin-left: 590px;
+    
+    }
+    .photo2 {
+        position: absolute;
+        top: 0px;
+        margin-left: 590px;
+    
+    }
+    .column {
+        
+        width: 400px;
+        height: 300px;
+        padding: 10px;
+    }
+    
+    
+    .column img {
+        opacity: 0.8; 
+        cursor: pointer; 
+    }
+    
+    .column img:hover {
+        opacity: 1;
+    }
+    
+    
+    .gallery:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    
+    .box {
+        transform: translateX(100px);
+        position: relative;
+        display: none;
+    }
+    
+    
+    #imgtext {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: white;
+        font-size: 20px;
+    }
+    
+    
+    .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+    }
+    
+    
+    .window{
+        width: 400px;
+        height: 100px;
+        position:absolute;
+        left: 10px;
+        bottom:0;
+        right:0;
+        background: #9b59b6; 
+        display:none;
+    }
+    .column:hover .window{
+        display:block;
+       
+    }
+    .window h2 {
+        color: white;
+        margin: 0;
+    }
+    
+    .window1{
+        width: 400px;
+        height: 100px;
+        position:absolute;
+        left: 10px;
+        bottom: 330px;
+        right:0;
+        background: #9b59b6;
+        
+        display:none;
+    }
+    .column:hover .window1{
+        display:block;
+    }
+    
+    .window1 h2 {
+        color: white;
+        margin: 0;
+    }
+
+    /* Обратная свящь*/
+   
+    .feedback {
+        height: 700px;
+        position: relative;
+    }
+    
+    .form {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        margin-left: 200px;
+    
+    }
+    
+    .form input {
+        width: 370px;
+        height: 40px;
+        font-size: 20px;
+        margin: 20px;
+        border: 5px solid #d1def0;
+        border-radius: 10px ;
+        background: #e4e8e8;
+    
+    }
+    
+    textarea {
+        font-size: 20px;
+        width: 770px;
+        height: 210px;
+        border: 5px solid #d1def0;
+        border-radius: 10px;
+        background: #e4e8e8;
+        position: absolute;
+        top: 200px;
+        left: 230px;
+        resize: none;
+    }
+    
+    .send {
+        position: absolute;
+        top: 450px;
+        margin-left: 850px;
+        
+       
+    }
+    
+    .send input {
+        font-size: 20px;
+        background-color: #d1def0;
+        border: 0;
+        border-radius: 10x;
+        color:  #9b59b6;
+        
+    }
+    
+    .send input:hover {
+        box-shadow: 0 0 5px 0 #9b59b6 inset, 0 0 5px 2px  #9b59b6;
+        cursor: pointer;
+    }
+    
+    .send input:active {
+        box-shadow: 0 0 10px 0  #5b1e74 inset, 0 0 10px 4px#5b1e74;
+    }
+    
+    
+    /*Подвал*/
+    
+    .footer {
+        height: 300px;
+        background-color: #9b59b6;
+        display: flex;
+        position: relative;
+    }
+    
+    .footer p {
+        color: white;
+        font-size: 20px;
+        margin: 50px;
+    }
+    
+    .twitter {
+        position: absolute;
+        top: -30px;
+        left: 200px;
+    }
+    
+    .dribbble {
+        position: absolute;
+        top: -30px;
+        left: 550px;
+    }
+    
+    .facebook {
+        position: absolute;
+        top: -30px;
+        left: 880px;
+    }
+    
+    .copy {
+        position: absolute;
+        top: 140px;
+        left: 120px;
+        
+    }
+    
+    .print {
+        position: absolute;
+        top: 140px;
+        right: 120px;
+        
+    }
+ 
+}

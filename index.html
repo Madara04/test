@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <p>LOGO</p>
+        </div>
+        <div class="menu">
+            <ul class="menu-main">
+                <li>
+                    <a href="" >Start</a>
+                </li>
+                <li>
+                    <a href="">About me</a>
+                </li>
+                <li>
+                    <a href="">Work</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="info">
+            <h1>May I introduce myself?</h1>
+            <div class="horizon"></div>
+            <p>Frontend Design | UI/UX Design</p>
+        </div>
+        
+    </div>
+    <div class="portfolio">
+        <div class="main">
+            <h2>Raphael Lechner.</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit nam sapiente quaerat ab corrupti incidunt commodi corporis totam. Nobis atque assumenda autem molestias qui quaerat facilis aliquid ea veritatis sequi officia cumque sit culpa nisi sapiente magni quis doloremque voluptate fugiat aut nam, voluptates sint libero dolor. Quasi ipsa inventore maxime similique provident blanditiis eum, aliquid, repudiandae eligendi vitae sequi.</p>
+        </div>
+        <div class="main-block">
+            <div class="block-one">
+                <img src="images/Icon-one.png" alt="" width="70px" height="70px">
+                <h3>Sketching is fun</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi nihil illum itaque atque ducimus praesentium, eaque odio natus sunt doloremque enim sit obcaecati officia! Eius quia recusandae officia corrupti quos quis unde nostrum beatae in nemo, nisi dignissimos quas hic!</p>
+            </div>
+            <div class="block-two">
+                <img src="images/Icon-two.png" alt="" width="70px" height="70px">
+                <h3>Desing afterwards</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi nihil illum itaque atque ducimus praesentium, eaque odio natus sunt doloremque enim sit obcaecati officia! Eius quia recusandae officia corrupti quos quis unde nostrum beatae in nemo, nisi dignissimos quas hic!</p>
+            </div>
+            
+            <div class="block-three">
+                <img src="images/Icon-three.png" alt="" width="70px" height="70px">
+                <h3>Finalize</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi nihil illum itaque atque ducimus praesentium, eaque odio natus sunt doloremque enim sit obcaecati officia! Eius quia recusandae officia corrupti quos quis unde nostrum beatae in nemo, nisi dignissimos quas hic!</p>
+            </div>
+        </div>
+
+        
+    </div>
+    <div class="gallery">
+        <div class="photo1">
+            <div class="column">
+                <img src="images/flower-one.png" alt="Hyacinth" style="width:100%" onclick="myFunction(this);" width="400px" height="300px">
+                <div class="window1">
+                    <h2>Lorem ipsum dolor sit</h2>
+                    <p>amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <img src="images/flower-two.png" alt="Red ginger" style="width:100%" onclick="myFunction(this);" width="400px" height="300px">
+                <div class="window">
+                    <h2>Lorem ipsum dolor sit</h2>
+                    <p>amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="photo2">
+            <div class="column">
+                <img src="images/flower-three.png" alt="Milkweed" style="width:100%" onclick="myFunction(this);" width="400px" height="300px">
+                <div class="window1">
+                    <h2>Lorem ipsum dolor sit</h2>
+                    <p>amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <img src="images/flower-four.png" alt="Red ginger" style="width:100%" onclick="myFunction(this);" width="400px" height="300px">
+                <div class="window">
+                    <h2>Lorem ipsum dolor sit</h2>
+                    <p>amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="box">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">×</span>
+          <img id="expandedImg" style="width:100%">
+          <div id="imgtext"></div>
+        </div>
+
+        <script>
+            function myFunction(imgs) {
+                var expandImg = document.getElementById("expandedImg");
+                var imgText = document.getElementById("imgtext");
+                expandImg.src = imgs.src;
+                imgText.innerHTML = imgs.alt;
+                expandImg.parentElement.style.display = "block";
+            }
+        </script>
+        
+     
+    </div>
+    <div class="feedback">
+        <h1>Gen in touch!</h1>
+        <div class="form">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+        </div>
+        <textarea name="text" cols="30" rows="5" placeholder="How can I help you?"></textarea>
+        <div class="send">
+            <input type="submit" value="Send">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="twitter"><a href="https://twitter.com/"><img src="images/twitter.png" alt=""></a></div>
+        <div class="dribbble"><a href="https://dribbble.com/"><img src="images/dribbble.png" alt=""></a></div>
+        <div class="facebook"><a href="https://www.facebook.com/"><img src="images/facebook.png" alt=""></a></div>
+        <div class="copy"><p>&copy Raphael Lechner</p></div>
+        <div class="print"><p>Imprint</p></div>
+
+    </div>
+    
+</body>
+</html>
